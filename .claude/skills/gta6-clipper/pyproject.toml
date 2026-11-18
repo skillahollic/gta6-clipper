@@ -1,0 +1,20 @@
+[project]
+name = "gta6-clipper"
+version = "1.0.0"
+description = "GTA 6 streams in, ready-to-post vertical clips out. Local and free."
+requires-python = ">=3.10,<3.14"
+# Everything is installed into this folder's own .venv by uv. Nothing system-wide.
+# imageio-ffmpeg ships its own ffmpeg, and the deno package ships the JavaScript
+# runtime that YouTube downloads need, so the viewer does not install either one.
+dependencies = [
+    "yt-dlp[default]>=2025.11.12",
+    "deno>=2.1",
+    "imageio-ffmpeg>=0.6",
+    "faster-whisper>=1.1",
+    "opencv-python-headless>=4.9,<5",
+    "pillow>=10.1",
+    "numpy>=1.26",
+]
+
+[tool.uv]
+package = false

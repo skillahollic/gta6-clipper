@@ -1,0 +1,10 @@
+# Streamers to check with "find". One per line: twitch:<login> or youtube:@<handle>
+# "find" takes each one's newest saved stream from the last 48 hours with GTA in the title.
+# Put the streamers you clip for (and who allow clipping) here.
+twitch:kaicenat
+twitch:xqc
+twitch:timthetatman
+twitch:summit1g
+twitch:caseoh_
+twitch:jynxzi
+youtube:@IShowSpeed
